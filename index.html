@@ -57,9 +57,10 @@
 <script type="text/javascript">
 	// 百度地图API功能
 	var map = new BMap.Map("tianshui");          
-	map.centerAndZoom(new BMap.Point(105.275342,34.998613), 8);
+	
 	var local = new BMap.LocalSearch(map, {
 		renderOptions:{map: map}
 	});
 	local.search("张家川");
+	map.centerAndZoom(new BMap.Point(105.275342,34.998613), 8);
 </script>
